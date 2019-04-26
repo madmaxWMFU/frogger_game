@@ -1,3 +1,45 @@
 body {
     text-align: center;
 }
+
+.select-player-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;    
+	margin: 20px 140px;
+    border: 3px dotted black;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+.player-wrap__image {
+	background-size: 80px 135px;
+    height: 85px;
+    width: 80px;
+    background-position-y: -40px;	
+}
+
+.super-boy {
+	background-image: url("../images/char-boy.png");
+}
+
+.cat-girl {
+	background-image: url("../images/char-cat-girl.png");
+}
+
+.horn-girl {
+	background-image: url("../images/char-horn-girl.png");
+}
+
+.pink-girl {
+	background-image: url("../images/char-pink-girl.png");
+}
+
+.princess-girl {
+	background-image: url("../images/char-princess-girl.png");
+}
+
+.player-wrap:hover {
+	outline: 1px solid #56a2c8c2;
+	cursor: pointer;
+}
