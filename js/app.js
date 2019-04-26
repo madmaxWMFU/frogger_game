@@ -34,8 +34,6 @@ class Enemy {
     }
 }
 
-let score = document.querySelector(".user-score");
-
 class Enemy {
     constructor(x, y, speed) {
         this.x = x;
