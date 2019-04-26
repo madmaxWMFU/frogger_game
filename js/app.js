@@ -34,34 +34,6 @@ class Enemy {
     }
 }
 
-class Enemy {
-    constructor(x, y, speed) {
-        this.x = x;
-        this.y = y;
-        this.sprite = "images/enemy-bug.png";
-        this.speed = speed;
-        this.player = player;
-    }
-    
-    update(dt) {
-        this.x += this.speed * dt;
-        if(this.x > 510) {
-            this.x = -50;
-            this.speed = randomSpeed();
-        }
-
-        if(player.x < this.x + 80 && player.x + 80 > this.x && player.y < this.y + 60 && 60 + player.y > this.y) {
-            player.x = 200;
-            player.y = 400;
-            minusScore();
-        }
-    }
-
-    render() {
-        ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-    }
-}
-
 class Player {
     constructor(x, y, icon) {
         this.x = x;
